@@ -45,14 +45,14 @@
 
         .profession {
           line-height: 3rem;
-          font-size: 2rem;
+          font-size: 1.6rem;
 
           width: 100%;
         }
 
         .contact-button-area {
           display: flex;
-          padding: 2rem 0rem;
+          padding: 2.4rem 0rem;
 
           a {
             @include button-common-style;
@@ -79,6 +79,7 @@
 
         .find-me-on {
           font-size: 0.9rem;
+          font-weight: bold;
         }
 
         .landing-page-link {
