@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .section-1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .hero {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        padding-bottom: 3rem;
+
+        h3 {
+          line-height: 3rem;
+          font-size: 1.5rem;
+        }
+
+        h1 {
+          /* Rafee Alam */
+
+          font-family: "Roboto Slab";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 5rem;
+          line-height: 7rem;
+          letter-spacing: 0.06em;
+
+          /* #00F0FF */
+          color: $secondary-color-3;
+        }
+
+        .profession {
+          line-height: 3rem;
+          font-size: 2rem;
+
+          width: 100%;
+        }
+
+        .contact-button-area {
+          display: flex;
+          padding: 2rem 0rem;
+
+          a {
+            @include button-common-style;
+
+            &:hover {
+              @include hover-animation-common;
+            }
+          }
+
+          .get-resume {
+            @include button-common-style;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin-left: 2rem;
+
+            img path {
+              margin-left: 0.5rem;
+              margin-top: 0.2rem;
+              // background: $secondary-color-3;
+            }
+          }
+        }
+
+        .find-me-on {
+          font-size: 0.9rem;
+        }
+
+        .landing-page-link {
+          display: flex;
+
+          a {
+            padding-right: 1.75rem;
+            padding-top: 1rem;
+          }
+
+          img {
+            zoom: 0.75;
+          }
+        }
+      }
+
+      .landing-page-image-section {
+        zoom: 0.75;
+        transform: translateX(40%);
+      }
+    }
+  }
+}

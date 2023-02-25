@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixin";
+@import "navbar";
+@import "sections";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Roboto Slab", serif;
+  background-color: $primary-color-1;
+}
+
+body {
+  padding: 2rem 8rem;
+}
+
+a {
+  color: $secondary-color-2;
+}
+
+h3 {
+  line-height: 3rem;
+  font-size: 1.5rem;
+}

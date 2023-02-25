@@ -1,0 +1,13 @@
+@mixin button-common-style {
+  padding: 0.4rem 1rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.2rem;
+  border-color: $secondary-color-1;
+  font-size: normal;
+}
+
+@mixin hover-animation-common {
+  color: $primary-color-1;
+  background: $secondary-color-1;
+}

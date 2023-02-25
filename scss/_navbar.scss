@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary-color-1;
+  transition: all 0.3s ease;
+
+  .logo-div {
+    display: flex;
+    .logo {
+      /* Coruscatingart */
+
+      width: 186px;
+      height: 34px;
+      left: 0px;
+      top: 0px;
+
+      font-family: "Roboto Slab";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 34px;
+
+      /* Style */
+      background: linear-gradient(90.81deg, #c400bc 0.41%, #006a8b 96.94%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo-star {
+      zoom: 0.75;
+      transform: translateX(-200%);
+    }
+  }
+
+  .nav-list {
+    a {
+      font-size: 0.9rem;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    display: flex;
+    .nav-link {
+      padding: 0rem 2rem;
+    }
+  }
+
+  .search-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 10px;
+    border-radius: 0.3rem;
+    font-size: small;
+    background-color: $secondary-color-1;
+    cursor: pointer;
+    .search {
+      color: $primary-color-1;
+      background-color: $secondary-color-1;
+    }
+    .search-icon {
+      zoom: 0.75;
+      background-color: $secondary-color-1;
+    }
+  }
+}
+
+.menu {
+  // will come back later
+}
