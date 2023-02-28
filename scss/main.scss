@@ -2,6 +2,7 @@
 @import "mixin";
 @import "navbar";
 @import "sections";
+@import "about-me";
 
 * {
   margin: 0;
@@ -22,7 +23,11 @@ a {
   color: $secondary-color-2;
 }
 
-h3 {
-  line-height: 3rem;
-  font-size: 1.5rem;
+h2 {
+  padding: 2rem 0rem;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: $secondary-color-3;
 }

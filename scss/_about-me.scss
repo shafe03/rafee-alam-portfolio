@@ -1,0 +1,57 @@
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+
+  .about-me-content {
+    // width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      text-align: center;
+      color: $secondary-color-2;
+    }
+
+    a {
+      @include button-common-style;
+      margin: 1rem;
+      &:hover {
+        background-color: $secondary-color-1;
+        color: $primary-color-1;
+      }
+    }
+  }
+
+  .experiences {
+    margin-left: auto;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+    .exp {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .exp-head {
+        padding: 0.5rem 1.5rem;
+        border-right: 1px solid $secondary-color-3;
+
+        font-weight: 500;
+        font-size: 1.5rem;
+
+        color: $secondary-color-3;
+      }
+
+      .exp-content {
+        font-size: small;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}
