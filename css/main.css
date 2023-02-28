@@ -322,6 +322,100 @@
   padding: 0.5rem 1.5rem;
 }
 
+.services-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-section .services-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-auto-flow: row;
+  position: relative;
+  grid-gap: 1.2rem;
+}
+
+.services-section .services-wrapper .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.2rem;
+  position: relative;
+  scale: 1;
+}
+
+.services-section .services-wrapper .services h3 {
+  position: absolute;
+  background: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  color: #ffffff;
+  scale: 1;
+}
+
+.services-section .services-wrapper .services p {
+  position: absolute;
+  background: none;
+  padding: 2rem;
+  text-align: center;
+  color: #d1d1d1;
+  font-size: small;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  scale: 1;
+}
+
+.services-section .services-wrapper .services:hover img {
+  opacity: 0.5;
+  -webkit-transition: scale 0.2s ease 0.5s;
+  transition: scale 0.2s ease 0.5s;
+}
+
+.services-section .services-wrapper .services:hover h3 {
+  scale: 1.2;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #0a0a0a;
+  -webkit-transition: scale 0.2s ease 0.2s;
+  transition: scale 0.2s ease 0.2s;
+}
+
+.services-section .services-wrapper .services:hover p {
+  font-weight: 500;
+  scale: 1.1;
+  color: #0a0a0a;
+  -webkit-transition: scale 0.2s ease 0.2s;
+  transition: scale 0.2s ease 0.2s;
+}
+
 * {
   margin: 0;
   padding: 0;
