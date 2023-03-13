@@ -1,0 +1,38 @@
+.skilled-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+
+  h2 {
+    padding: 0rem;
+  }
+
+  .skills {
+    .skill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    svg {
+      padding: 1.5rem;
+
+      path {
+        color: $primary-color-4;
+      }
+      &:hover {
+        path {
+          color: $secondary-color-1;
+        }
+        rect {
+          color: $primary-color-4;
+        }
+        circle {
+          color: $primary-color-4;
+        }
+      }
+    }
+  }
+}

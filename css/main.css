@@ -393,13 +393,13 @@
 }
 
 .services-section .services-wrapper .services:hover img {
-  opacity: 0.5;
+  opacity: 0.3;
   -webkit-transition: scale 0.2s ease 0.5s;
   transition: scale 0.2s ease 0.5s;
 }
 
 .services-section .services-wrapper .services:hover h3 {
-  scale: 1.2;
+  scale: 1.1;
   font-weight: 600;
   font-size: 1.7rem;
   line-height: 2rem;
@@ -416,6 +416,59 @@
   transition: scale 0.2s ease 0.2s;
 }
 
+.skilled-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+.skilled-in h2 {
+  padding: 0rem;
+}
+
+.skilled-in .skills .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skilled-in .skills svg {
+  padding: 1.5rem;
+}
+
+.skilled-in .skills svg path {
+  color: #ffffff;
+}
+
+.skilled-in .skills svg:hover path {
+  color: #088869;
+}
+
+.skilled-in .skills svg:hover rect {
+  color: #ffffff;
+}
+
+.skilled-in .skills svg:hover circle {
+  color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -430,6 +483,7 @@
 
 body {
   padding: 2rem 8rem;
+  background-attachment: #c9d1d6;
 }
 
 a {
