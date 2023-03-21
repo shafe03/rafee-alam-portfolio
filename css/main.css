@@ -434,7 +434,7 @@
 }
 
 .skilled-in h2 {
-  padding: 0rem;
+  padding: 1rem 0.5rem;
 }
 
 .skilled-in .skills .skill {
@@ -450,11 +450,19 @@
 }
 
 .skilled-in .skills svg {
-  padding: 1.5rem;
+  margin: 1rem 2rem;
+  width: 80%;
+  height: 80%;
 }
 
 .skilled-in .skills svg path {
   color: #ffffff;
+}
+
+.skilled-in .skills svg:hover {
+  border-radius: 27%;
+  -webkit-box-shadow: 0px 0.3rem 0.5rem rgba(107, 106, 106, 0.512);
+          box-shadow: 0px 0.3rem 0.5rem rgba(107, 106, 106, 0.512);
 }
 
 .skilled-in .skills svg:hover path {
@@ -467,6 +475,135 @@
 
 .skilled-in .skills svg:hover circle {
   color: #ffffff;
+}
+
+.portfolio-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-section .portfolio-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9.93px;
+}
+
+.portfolio-section .portfolio-wrapper .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-section .portfolio-wrapper .project:hover {
+  -webkit-box-shadow: 0.4rem 0.3rem 0.5rem #0a0a0a;
+          box-shadow: 0.4rem 0.3rem 0.5rem #0a0a0a;
+  -webkit-transition: all 0.1s linear 0.1s;
+  transition: all 0.1s linear 0.1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portfolio-section .portfolio-wrapper .project img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(70.31%, rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70.31%, #000000 100%);
+  border-radius: 10.0539px;
+}
+
+.portfolio-section .portfolio-wrapper .project a {
+  padding: 0.4rem 1rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.2rem;
+  border-color: #088869;
+  font-size: normal;
+  position: absolute;
+  margin-top: 12rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  background-color: #088869;
+  color: #f4f6f7;
+  font-size: small;
+}
+
+.portfolio-section .portfolio-wrapper .project a:hover {
+  background-color: #f4f6f7;
+  color: #0a0a0a;
+}
+
+.portfolio-section .portfolio-wrapper .project-1 {
+  width: 55%;
+}
+
+.portfolio-section .portfolio-wrapper .project-1 a {
+  margin-top: 22rem;
+}
+
+.portfolio-section .portfolio-wrapper .project-2 {
+  width: 40%;
+}
+
+.portfolio-section .portfolio-wrapper .project-2 a {
+  margin-top: 22rem;
+}
+
+.portfolio-section .portfolio-wrapper .project-3 {
+  width: 32%;
+}
+
+.portfolio-section .portfolio-wrapper .project-4 {
+  width: 32%;
+}
+
+.portfolio-section .portfolio-wrapper .project-5 {
+  width: 33.33%;
+}
+
+.portfolio-section .portfolio-wrapper .watch-more {
+  padding: 0.4rem 1rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.2rem;
+  border-color: #088869;
+  font-size: normal;
+  margin: 2rem;
+}
+
+.portfolio-section .portfolio-wrapper .watch-more:hover {
+  background-color: #088869;
+  color: #f4f6f7;
 }
 
 * {

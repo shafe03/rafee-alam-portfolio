@@ -6,7 +6,7 @@
   padding: 4rem;
 
   h2 {
-    padding: 0rem;
+    padding: 1rem 0.5rem;
   }
 
   .skills {
@@ -17,12 +17,17 @@
     }
 
     svg {
-      padding: 1.5rem;
+      // padding: 1.5rem;
+      margin: 1rem 2rem;
+      width: 80%;
+      height: 80%;
 
       path {
         color: $primary-color-4;
       }
       &:hover {
+        border-radius: 27%;
+        box-shadow: 0px 0.3rem 0.5rem rgba(107, 106, 106, 0.512);
         path {
           color: $secondary-color-1;
         }
