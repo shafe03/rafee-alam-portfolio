@@ -1,0 +1,104 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .review-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 9.93px;
+
+    .review {
+      position: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: $secondary-color-4;
+      padding: 1rem;
+      margin: 1rem;
+      width: 20rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      &:hover {
+        scale: 1.01;
+        transition: all 0.2s linear 0.1s;
+        box-shadow: 0.4rem 0.3rem 0.5rem $secondary-color-2;
+      }
+      .stars-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        background-color: $secondary-color-4;
+        margin: 0.5rem;
+        width: 100%;
+
+        .quote {
+          margin-right: auto;
+        }
+
+        .stars {
+          margin-left: auto;
+          display: flex;
+          background-color: $secondary-color-4;
+        }
+        img {
+          background-color: $secondary-color-4;
+        }
+        svg {
+          background-color: $secondary-color-4;
+        }
+      }
+      p {
+        padding: 1rem;
+        text-align: justify;
+        margin-bottom: 0.5rem;
+        background-color: $secondary-color-4;
+        color: $primary-color-1;
+        font-size: small;
+        font-weight: 300;
+      }
+
+      .reviewed-by {
+        display: flex;
+        background-color: $secondary-color-4;
+        width: 100%;
+        align-items: center;
+        padding-left: 1rem;
+
+        .picture {
+          border-radius: 100%;
+          overflow: hidden;
+          width: 4rem;
+          height: 4rem;
+          background-color: $secondary-color-4;
+          border: 1px solid $secondary-color-1;
+
+          img {
+            background-color: $secondary-color-4;
+          }
+        }
+        .content {
+          font-size: 0.8rem;
+          background-color: $secondary-color-4;
+          margin-left: 1rem;
+
+          .reviewer-name {
+            background-color: $secondary-color-4;
+            color: $primary-color-1;
+            font-weight: bold;
+          }
+          .reviewer-designation {
+            background-color: $secondary-color-4;
+            color: $primary-color-1;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+}

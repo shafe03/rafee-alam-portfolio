@@ -2,9 +2,12 @@
   "name": "rafee-alam-portfolio",
   "version": "1.0.0",
   "description": "",
+  "source": "index.html",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "",
   "license": "ISC",

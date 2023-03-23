@@ -524,10 +524,10 @@
 .portfolio-section .portfolio-wrapper .project:hover {
   -webkit-box-shadow: 0.4rem 0.3rem 0.5rem #0a0a0a;
           box-shadow: 0.4rem 0.3rem 0.5rem #0a0a0a;
-  -webkit-transition: all 0.1s linear 0.1s;
-  transition: all 0.1s linear 0.1s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transition: all 0.2s linear 0.1s;
+  transition: all 0.2s linear 0.1s;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .portfolio-section .portfolio-wrapper .project img {
@@ -606,6 +606,156 @@
   color: #f4f6f7;
 }
 
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews .review-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9.93px;
+}
+
+.reviews .review-wrapper .review {
+  position: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323232;
+  padding: 1rem;
+  margin: 1rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.reviews .review-wrapper .review:hover {
+  scale: 1.01;
+  -webkit-transition: all 0.2s linear 0.1s;
+  transition: all 0.2s linear 0.1s;
+  -webkit-box-shadow: 0.4rem 0.3rem 0.5rem #0a0a0a;
+          box-shadow: 0.4rem 0.3rem 0.5rem #0a0a0a;
+}
+
+.reviews .review-wrapper .review .stars-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #323232;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.reviews .review-wrapper .review .stars-section .quote {
+  margin-right: auto;
+}
+
+.reviews .review-wrapper .review .stars-section .stars {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #323232;
+}
+
+.reviews .review-wrapper .review .stars-section img {
+  background-color: #323232;
+}
+
+.reviews .review-wrapper .review .stars-section svg {
+  background-color: #323232;
+}
+
+.reviews .review-wrapper .review p {
+  padding: 1rem;
+  text-align: justify;
+  margin-bottom: 0.5rem;
+  background-color: #323232;
+  color: #f4f6f7;
+  font-size: small;
+  font-weight: 300;
+}
+
+.reviews .review-wrapper .review .reviewed-by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #323232;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+}
+
+.reviews .review-wrapper .review .reviewed-by .picture {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 4rem;
+  height: 4rem;
+  background-color: #323232;
+  border: 1px solid #088869;
+}
+
+.reviews .review-wrapper .review .reviewed-by .picture img {
+  background-color: #323232;
+}
+
+.reviews .review-wrapper .review .reviewed-by .content {
+  font-size: 0.8rem;
+  background-color: #323232;
+  margin-left: 1rem;
+}
+
+.reviews .review-wrapper .review .reviewed-by .content .reviewer-name {
+  background-color: #323232;
+  color: #f4f6f7;
+  font-weight: bold;
+}
+
+.reviews .review-wrapper .review .reviewed-by .content .reviewer-designation {
+  background-color: #323232;
+  color: #f4f6f7;
+  font-weight: 200;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -616,6 +766,7 @@
   outline: none;
   font-family: "Roboto Slab", serif;
   background-color: #f4f6f7;
+  scroll-behavior: smooth;
 }
 
 body {

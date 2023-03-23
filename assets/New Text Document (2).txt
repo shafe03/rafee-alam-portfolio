@@ -1,0 +1,10 @@
+/* Star 6 */
+
+position: absolute;
+width: 25.03px;
+height: 25.03px;
+left: 526.43px;
+top: 4326.53px;
+
+background: #C36723;
+border-radius: 1.00132px;
