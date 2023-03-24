@@ -51,3 +51,4 @@ typings/
 # Serverless directories
 .serverless
 .vscode
+.parcel-cache
