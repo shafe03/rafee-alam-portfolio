@@ -162,7 +162,6 @@
   font-size: 5rem;
   line-height: 7rem;
   letter-spacing: 0.06em;
-  /* #00F0FF */
   color: #7761ff;
 }
 
@@ -622,6 +621,10 @@
           align-items: center;
 }
 
+.reviews h2 {
+  padding: 1rem;
+}
+
 .reviews .review-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,6 +759,277 @@
   font-weight: 200;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact h2 {
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.contact .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contact .contact-wrapper .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-wrapper .contact-content .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #323232;
+  margin: 0.5rem;
+  padding: 1.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.3rem;
+}
+
+.contact .contact-wrapper .contact-content svg {
+  background-color: #323232;
+  scale: 0.6;
+}
+
+.contact .contact-wrapper .contact-content p {
+  background-color: #323232;
+  color: #f4f6f7;
+  font-size: smaller;
+}
+
+.contact .contact-wrapper .contact-form {
+  background-color: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 1.5rem;
+  padding: 2.3rem;
+  border-radius: 0.3rem;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #323232;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323232;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs .row1 {
+  width: 100%;
+  background-color: #323232;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs .row2 {
+  width: 100%;
+  background-color: #323232;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs input {
+  padding: 0.5rem 1rem;
+  margin: 0.8rem;
+  width: 94%;
+  background: #0e0e0e;
+  color: #f4f6f7;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs input::-webkit-input-placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs input:-ms-input-placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs input::-ms-input-placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form .input-wrapper .inputs input::placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form textarea {
+  background: #0e0e0e;
+  color: #f4f6f7;
+  padding: 0.4rem 1rem;
+  margin: 0.5rem;
+}
+
+.contact .contact-wrapper .contact-form textarea::-webkit-input-placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form textarea:-ms-input-placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form textarea::-ms-input-placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form textarea::placeholder {
+  color: #f4f6f7;
+  text-align: center;
+}
+
+.contact .contact-wrapper .contact-form .btn-sent {
+  width: 30%;
+  padding: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #0e0e0e;
+  color: #f4f6f7;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .logo h3 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 53px;
+  background: linear-gradient(90.81deg, #c400bc 0.41%, #006a8b 96.94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.footer .logo img {
+  margin-left: 0.5rem;
+}
+
+.footer .footer-link {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-link a {
+  margin-right: 2rem;
+}
+
+.footer p {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.3;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+.footer a {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.3;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -767,6 +1041,7 @@
   font-family: "Roboto Slab", serif;
   background-color: #f4f6f7;
   scroll-behavior: smooth;
+  max-width: 1350px;
 }
 
 body {
