@@ -15,17 +15,9 @@ $background-red: linear-gradient(to right, #a10c14, #e23b3b);
 $background-gradient-green: linear-gradient(to right, #0b7e48, #3be286);
 $background-gradient-highlight: linear-gradient(to right, #3be286, #0da5d3);
 
-//Font size
-$h1-mobile: 3rem;
-$h2-mobile: 2.5rem;
-$h3-mobile: 1.8rem;
-$h4-h5-h6-mobile: 1.6rem;
-$p-mobile: 1.4rem;
-
 // font family
 $h1-font-family: "Roboto Slab", serif;
 
-$media-mobile-sm: 350px;
-$media-tablet: 750px;
-$media-desktop: 950px;
-$media-large-screen: 1201px;
+$mobile: 450px;
+$media-tablet-1: 750px;
+$media-tablet-2: 950px;

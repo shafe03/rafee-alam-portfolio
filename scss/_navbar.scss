@@ -4,13 +4,17 @@
   justify-content: space-between;
   background-color: $primary-color-1;
   transition: all 0.3s ease;
+  @include mobile {
+    flex-direction: column;
+  }
 
   .logo-div {
     display: flex;
+    justify-content: center;
+    align-items: center;
     .logo {
       /* Coruscatingart */
 
-      width: 186px;
       height: 34px;
       left: 0px;
       top: 0px;
@@ -30,21 +34,29 @@
     }
 
     .logo-star {
-      zoom: 0.75;
-      transform: translateX(-200%);
+      scale: 0.8;
+      margin-left: 0.5rem;
     }
   }
 
   .nav-list {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+      display: none;
+    }
+
     a {
       font-size: 0.9rem;
       &:hover {
         font-weight: bold;
       }
     }
-    display: flex;
     .nav-link {
       padding: 0rem 2rem;
+      @include media-tablet-2 {
+        padding: 0rem 1rem;
+      }
     }
   }
 
@@ -58,6 +70,10 @@
     font-size: small;
     background-color: $secondary-color-1;
     cursor: pointer;
+    @include mobile {
+      display: none;
+    }
+
     .search {
       color: $primary-color-1;
       background-color: $secondary-color-1;

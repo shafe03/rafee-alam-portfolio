@@ -11,3 +11,19 @@
   color: $primary-color-1;
   background: $secondary-color-1;
 }
+
+@mixin mobile() {
+  @media screen and (min-width: 350px) and (max-width: 749px) {
+    @content;
+  }
+}
+@mixin media-tablet-1() {
+  @media screen and (max-width: $media-tablet-1) {
+    @content;
+  }
+}
+@mixin media-tablet-2() {
+  @media screen and (max-width: $media-tablet-2) {
+    @content;
+  }
+}

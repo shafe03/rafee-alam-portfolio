@@ -3,24 +3,70 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
+  padding: 2rem;
+  @include media-tablet-2 {
+    padding-top: 2rem;
+  }
+  @include media-tablet-1 {
+    padding-top: 2rem;
+  }
+
+  @include mobile {
+    padding-top: 2rem;
+  }
 
   h2 {
     padding: 1rem 0.5rem;
+    @include mobile {
+      padding: 0.5rem 0.5rem;
+    }
   }
 
   .skills {
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      align-items: flex-start;
+      justify-content: flex-start;
+      transform: rotateY(-10rem);
+    }
     .skill {
       display: flex;
       justify-content: center;
       align-items: center;
+      border-radius: 27%;
+      width: 100%;
+
+      @include media-tablet-2 {
+        width: 80%;
+      }
+
+      @include media-tablet-1 {
+        width: 30rem;
+        align-items: normal;
+      }
+      @include mobile {
+        display: flex;
+      }
     }
 
     svg {
-      // padding: 1.5rem;
       margin: 1rem 2rem;
-      width: 80%;
-      height: 80%;
+      scale: 0.8;
+      @include media-tablet-2 {
+        scale: 0.5;
+        margin: 0rem 0.5rem;
+      }
+      @include media-tablet-1 {
+        scale: 0.5;
+        margin: 0;
+      }
+
+      @include mobile {
+        margin: 0;
+        height: auto;
+      }
 
       path {
         color: $primary-color-4;
@@ -28,6 +74,9 @@
       &:hover {
         border-radius: 27%;
         box-shadow: 0px 0.3rem 0.5rem rgba(107, 106, 106, 0.512);
+        @include mobile {
+          // height: 50%;
+        }
         path {
           color: $secondary-color-1;
         }

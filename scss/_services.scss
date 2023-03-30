@@ -9,6 +9,15 @@
     grid-auto-flow: row;
     position: relative;
     grid-gap: 1.2rem;
+    @include media-tablet-2 {
+      grid-template-columns: auto auto;
+      grid-gap: 0.5rem;
+      grid-auto-flow: row;
+    }
+
+    @include media-tablet-1 {
+      grid-template-columns: auto;
+    }
 
     .services {
       display: flex;
@@ -18,6 +27,13 @@
       border-radius: 1.2rem;
       position: relative;
       scale: 1;
+      width: 100%;
+
+      @include mobile {
+        img {
+          width: 80%;
+        }
+      }
 
       h3 {
         position: absolute;
@@ -40,6 +56,11 @@
         font-size: small;
         transform: translateY(25%);
         scale: 1;
+
+        @include mobile {
+          font-size: xx-small;
+          padding: 4rem;
+        }
       }
 
       &:hover {

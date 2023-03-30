@@ -11,6 +11,10 @@
     align-items: center;
     gap: 9.93px;
 
+    @include media-tablet-1 {
+      flex-direction: column;
+    }
+
     .project {
       display: flex;
       border-radius: 1rem;
@@ -46,38 +50,80 @@
           background-color: $primary-color-1;
           color: $secondary-color-2;
         }
+
+        @include media-tablet-2 {
+          margin-top: 8rem;
+        }
+
+        @include media-tablet-2 {
+          margin-top: 18rem;
+        }
       }
     }
 
     .project-1 {
       width: 55%;
+      @include media-tablet-1 {
+        width: 90%;
+      }
       a {
         margin-top: 22rem;
+        @include media-tablet-2 {
+          margin-top: 20rem;
+        }
       }
     }
     .project-2 {
       width: 40%;
+      @include media-tablet-1 {
+        width: 90%;
+      }
       a {
         margin-top: 22rem;
+        @include media-tablet-2 {
+          margin-top: 15rem;
+        }
+        @include media-tablet-1 {
+          margin-top: 20rem;
+        }
       }
     }
     .project-3 {
       width: 32%;
+      @include media-tablet-1 {
+        width: 90%;
+      }
     }
     .project-4 {
       width: 32%;
+      @include media-tablet-1 {
+        width: 90%;
+      }
     }
     .project-5 {
       width: 33.33%;
-    }
-
-    .watch-more {
-      @include button-common-style;
-      margin: 2rem;
-      &:hover {
-        background-color: $secondary-color-1;
-        color: $primary-color-1;
+      @include media-tablet-1 {
+        width: 90%;
       }
+    }
+  }
+  .watch-more {
+    @include button-common-style;
+    margin: 2rem;
+    svg {
+      margin-left: 0.5rem;
+    }
+    &:hover {
+      svg {
+        background: $secondary-color-1;
+        fill: $primary-color-1;
+
+        path {
+          color: $primary-color-1;
+        }
+      }
+      background-color: $secondary-color-1;
+      color: $primary-color-1;
     }
   }
 }

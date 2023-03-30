@@ -7,17 +7,24 @@
   h2 {
     padding: 0;
     margin-top: 3rem;
+    @include media-tablet-1 {
+      padding: 1rem;
+    }
   }
 
   .contact-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @include media-tablet-1 {
+      flex-direction: column;
+    }
 
     .contact-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       .content {
         width: 100%;
         display: flex;
@@ -48,6 +55,9 @@
       margin: 1.5rem;
       padding: 2.3rem;
       border-radius: 0.3rem;
+      @include media-tablet-1 {
+        margin: 0.5rem;
+      }
 
       .input-wrapper {
         display: flex;
@@ -61,6 +71,9 @@
           justify-content: center;
           align-items: center;
           background-color: $secondary-color-4;
+          @include mobile {
+            flex-direction: column;
+          }
 
           .row1 {
             width: 100%;
@@ -77,6 +90,7 @@
             width: 94%;
             background: #0e0e0e;
             color: $primary-color-1;
+
             &::placeholder {
               color: $primary-color-1;
               text-align: center;
@@ -89,6 +103,7 @@
         color: $primary-color-1;
         padding: 0.4rem 1rem;
         margin: 0.5rem;
+
         &::placeholder {
           color: $primary-color-1;
           text-align: center;
@@ -100,6 +115,9 @@
         align-self: center;
         background: #0e0e0e;
         color: $primary-color-1;
+        @include mobile {
+          margin: 0.5rem;
+        }
       }
     }
   }

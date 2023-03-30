@@ -23,13 +23,28 @@
   max-width: 1350px;
 }
 
+html {
+  @include mobile {
+    font-size: 60%;
+  }
+}
+
 body {
   padding: 2rem 8rem;
   background-attachment: $primary-color-3;
+  @include media-tablet-2 {
+    padding: 2rem 4rem;
+  }
+  @include media-tablet-1 {
+    padding: 1rem 2rem;
+  }
 }
 
 a {
   color: $secondary-color-2;
+  @include media-tablet-1 {
+    font-size: small;
+  }
 }
 
 h2 {
@@ -39,4 +54,10 @@ h2 {
   font-weight: 600;
   font-size: 2rem;
   color: $secondary-color-3;
+  @include media-tablet-2 {
+    font-size: 1.5rem;
+  }
+  @include media-tablet-1 {
+    font-size: 1.3rem;
+  }
 }

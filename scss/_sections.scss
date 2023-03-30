@@ -1,21 +1,50 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .section-1 {
     display: flex;
     width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-tablet-1 {
+      flex-direction: column;
+      width: 80%;
+      flex-direction: column-reverse;
+    }
+    @include mobile {
+      width: 100%;
+      height: 100%;
+      padding-top: 3rem;
+    }
 
     .hero {
-      padding-top: 5rem;
+      padding-top: 0rem;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       width: 100%;
       flex-wrap: wrap;
+      @include media-tablet-2 {
+        padding: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      @include media-tablet-1 {
+        padding: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      @include mobile {
+        flex-direction: initial;
+        height: 80vh;
+      }
 
       .hero-content {
         display: flex;
@@ -23,10 +52,29 @@
         justify-content: flex-start;
         align-content: center;
         padding-bottom: 3rem;
+        @include media-tablet-2 {
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 1rem;
+        }
+        @include media-tablet-1 {
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 0.5rem;
+        }
+
+        @include mobile {
+          padding-bottom: 0.5rem;
+        }
 
         h3 {
           line-height: 3rem;
           font-size: 1.5rem;
+          @include media-tablet-1 {
+            line-height: 1.8rem;
+            font-size: 1rem;
+            text-align: center;
+          }
         }
 
         h1 {
@@ -39,18 +87,32 @@
           line-height: 7rem;
           letter-spacing: 0.06em;
           color: $secondary-color-3;
+          @include media-tablet-2 {
+            font-size: 4rem;
+          }
+          @include media-tablet-1 {
+            font-size: 2.5rem;
+            line-height: 4rem;
+          }
         }
 
         .profession {
           line-height: 3rem;
           font-size: 1.6rem;
-
           width: 100%;
+          @include media-tablet-1 {
+            line-height: 1.8rem;
+            font-size: 1rem;
+            text-align: center;
+          }
         }
 
         .contact-button-area {
           display: flex;
           padding: 2.4rem 0rem;
+          @include media-tablet-1 {
+            padding: 1.5rem 0rem;
+          }
 
           a {
             @include button-common-style;
@@ -67,6 +129,22 @@
             align-content: center;
             margin-left: 2rem;
 
+            svg {
+              margin-left: 0.5rem;
+            }
+            &:hover {
+              svg {
+                background: $secondary-color-1;
+                fill: $primary-color-1;
+
+                path {
+                  color: $primary-color-1;
+                }
+              }
+              background-color: $secondary-color-1;
+              color: $primary-color-1;
+            }
+
             img path {
               margin-left: 0.5rem;
               margin-top: 0.2rem;
@@ -82,6 +160,9 @@
 
         .landing-page-link {
           display: flex;
+          @include mobile {
+            scale: 0.6;
+          }
 
           a {
             padding-right: 1.75rem;
@@ -90,30 +171,26 @@
 
           img {
             zoom: 0.75;
+            @include mobile {
+              zoom: normal;
+            }
           }
         }
       }
 
       .landing-page-image-section {
-        zoom: 0.75;
-        transform: translateX(40%);
-        // animation: move 1s infinite 1s;
-        // transition: all 0.4s ease-in-out;
+        scale: 0.75;
+        margin-left: auto;
+        @include media-tablet-2 {
+          scale: 0.8;
+          margin: auto;
+        }
+        @include mobile {
+          scale: 0.4;
+          margin: auto;
+          transform: translateY(-45rem);
+        }
       }
-      // @keyframes move {
-      //   0% {
-      //     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-      //     transform: translatey(0px);
-      //   }
-      //   50% {
-      //     box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-      //     transform: translatey(-20px);
-      //   }
-      //   100% {
-      //     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-      //     transform: translatey(0px);
-      //   }
-      // }
     }
   }
 }

@@ -1,57 +1,108 @@
 .about-me {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 4rem;
-
-  .about-me-content {
-    // width: 80%;
+  @include media-tablet-2 {
+    padding: 1rem;
+  }
+  @include media-tablet-1 {
+    padding: 1rem;
+  }
+  .wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    p {
-      text-align: center;
-      color: $secondary-color-2;
+    align-items: flex-start;
+    @include media-tablet-1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
-    a {
-      @include button-common-style;
-      margin: 1rem;
-      &:hover {
-        background-color: $secondary-color-1;
-        color: $primary-color-1;
+    .about-me-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include media-tablet-2 {
+        padding: 0rem 3rem;
+        font-size: small;
+      }
+      @include media-tablet-1 {
+        padding: 0rem 2rem;
+        font-size: small;
+      }
+
+      p {
+        text-align: center;
+        color: $secondary-color-2;
+        width: 80%;
+      }
+    }
+
+    .experiences {
+      margin-left: auto;
+      @include media-tablet-1 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+      }
+
+      .exp {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        @include media-tablet-1 {
+          text-align: left;
+        }
+
+        .exp-head {
+          padding: 0.5rem 1.5rem;
+          border-right: 1px solid $secondary-color-3;
+          font-weight: 500;
+          font-size: 1.5rem;
+          color: $secondary-color-3;
+          @include media-tablet-2 {
+            font-size: 1.2rem;
+          }
+          @include media-tablet-1 {
+            font-size: 1.2rem;
+            padding: 0.5rem 1.5rem;
+          }
+        }
+
+        .exp-content {
+          font-size: small;
+          padding: 0.5rem 1.5rem;
+          @include media-tablet-2 {
+            font-size: smaller;
+          }
+        }
       }
     }
   }
+  a {
+    align-self: center;
+    @include button-common-style;
+    margin: 1rem;
+    svg {
+      margin-left: 0.5rem;
+    }
+    &:hover {
+      svg {
+        background: $secondary-color-1;
+        fill: $primary-color-1;
 
-  .experiences {
-    margin-left: auto;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-
-    .exp {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-
-      .exp-head {
-        padding: 0.5rem 1.5rem;
-        border-right: 1px solid $secondary-color-3;
-
-        font-weight: 500;
-        font-size: 1.5rem;
-
-        color: $secondary-color-3;
+        path {
+          color: $primary-color-1;
+        }
       }
-
-      .exp-content {
-        font-size: small;
-        padding: 0.5rem 1.5rem;
-      }
+      background-color: $secondary-color-1;
+      color: $primary-color-1;
     }
   }
 }
