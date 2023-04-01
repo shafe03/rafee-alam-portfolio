@@ -31,6 +31,19 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @include mobile {
+        font-family: "Roboto Slab";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 40px;
+        background: linear-gradient(90.81deg, #c400bc 0.41%, #006a8b 96.94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-decoration-color: transparent;
+      }
     }
 
     .logo-star {

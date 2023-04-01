@@ -52,6 +52,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .navbar .logo-div .logo {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    background: linear-gradient(90.81deg, #c400bc 0.41%, #006a8b 96.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-decoration-color: transparent;
+            text-decoration-color: transparent;
+  }
+}
+
 .navbar .logo-div .logo-star {
   scale: 0.8;
   margin-left: 0.5rem;
@@ -573,10 +589,25 @@
   }
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .about-me .wrapper .experiences {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .about-me .wrapper .experiences h2 {
+    padding: 1rem;
+  }
+}
+
 .about-me .wrapper .experiences .exp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -586,6 +617,21 @@
 @media screen and (max-width: 750px) {
   .about-me .wrapper .experiences .exp {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .about-me .wrapper .experiences .exp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -610,6 +656,14 @@
   }
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .about-me .wrapper .experiences .exp .exp-head {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid #7761ff;
+    border-right: none;
+  }
+}
+
 .about-me .wrapper .experiences .exp .exp-content {
   font-size: small;
   padding: 0.5rem 1.5rem;
@@ -618,6 +672,12 @@
 @media screen and (max-width: 950px) {
   .about-me .wrapper .experiences .exp .exp-content {
     font-size: smaller;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .about-me .wrapper .experiences .exp .exp-content {
+    text-align: center;
   }
 }
 
@@ -733,6 +793,13 @@
   scale: 1;
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .services-section .services-wrapper .services h3 {
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+  }
+}
+
 .services-section .services-wrapper .services p {
   position: absolute;
   background: none;
@@ -748,7 +815,7 @@
 @media screen and (min-width: 350px) and (max-width: 749px) {
   .services-section .services-wrapper .services p {
     font-size: xx-small;
-    padding: 4rem;
+    padding: 0rem 5rem;
   }
 }
 
@@ -774,6 +841,12 @@
   color: #0a0a0a;
   -webkit-transition: scale 0.2s ease 0.2s;
   transition: scale 0.2s ease 0.2s;
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .services-section .services-wrapper .services:hover p {
+    padding: 0rem 7rem;
+  }
 }
 
 .skilled-in {
@@ -1270,15 +1343,27 @@
 
 .reviews .review-wrapper .review .reviewed-by .picture {
   border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   width: 4rem;
   height: 4rem;
   background-color: #323232;
   border: 1px solid #088869;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .reviews .review-wrapper .review .reviewed-by .picture img {
+  width: 4rem;
+  height: 4rem;
   background-color: #323232;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .reviews .review-wrapper .review .reviewed-by .content {
@@ -1574,10 +1659,23 @@
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .footer {
+    margin-top: 3rem;
+    height: 25vh;
+  }
+}
+
 .footer .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .logo h3 {
@@ -1594,9 +1692,22 @@
           text-decoration-color: transparent;
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .footer .logo h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .footer .logo img {
   margin-left: 0.5rem;
   scale: 0.9;
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .footer .logo img {
+    scale: 0.7;
+  }
 }
 
 .footer .footer-link {
@@ -1617,6 +1728,13 @@
   margin-right: 2rem;
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .footer .footer-link {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
 .footer p {
   font-family: "Roboto Slab";
   font-style: normal;
@@ -1624,6 +1742,12 @@
   font-size: 0.3;
   line-height: 1.5rem;
   color: #000000;
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .footer p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .footer a {

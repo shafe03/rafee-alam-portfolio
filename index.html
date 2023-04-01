@@ -21,6 +21,26 @@
       referrerpolicy="no-referrer"
     />
     <script defer src="./main.js"></script>
+    <!-- seo -->
+    <meta property="og:title" content="Portfolio | Rafee alam" />
+    <meta
+      property="og:description"
+      content="Hi there! I'm Rafee, UI/UX designer working in Bangladesh. Check out my portfolio!"
+    />
+    <meta property="og:url" content="https://www.rafeealam.netlify.app" />
+    <meta property="og:site_name" content="rafee alam" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Portfolio" />
+    <meta name="facebook:title" content="Portfolio | Rafee alam" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("sMQpCIv6k7z3qh_6q");
+      })();
+    </script>
   </head>
   <body>
     <!-- navbar -->
@@ -63,7 +83,7 @@
             <h1>Rafee Alam</h1>
             <h3 class="profession">UI / UX Researcher & Graphic Designer</h3>
             <div class="contact-button-area">
-              <a href="#about">Contact me</a>
+              <a href="#contact">Contact me</a>
               <a href="#" class="get-resume"
                 >Get Resume
                 <svg
@@ -437,7 +457,9 @@
               him with your eyes closed.
             </p>
             <div class="reviewed-by">
-              <div class="picture"><img src="./assets/1.png" alt="" /></div>
+              <div class="picture">
+                <img src="./assets/shafealam.jpg" alt="" />
+              </div>
               <div class="content">
                 <h4 class="reviewer-name">Shafe Alam</h4>
                 <h4 class="reviewer-designation">
@@ -463,12 +485,12 @@
               soon with him.
             </p>
             <div class="reviewed-by">
-              <div class="picture"><img src="./assets/1.png" alt="" /></div>
+              <div class="picture">
+                <img src="./assets//reveiwer1.webp" alt="" />
+              </div>
               <div class="content">
-                <h4 class="reviewer-name">Shafe Alam</h4>
-                <h4 class="reviewer-designation">
-                  Full Stack Softwere Engineer
-                </h4>
+                <h4 class="reviewer-name">icoexpert</h4>
+                <h4 class="reviewer-designation">Fiver Client</h4>
               </div>
             </div>
           </div>
@@ -488,18 +510,18 @@
               provided me a special design that I will build on.
             </p>
             <div class="reviewed-by">
-              <div class="picture"><img src="./assets/1.png" alt="" /></div>
+              <div class="picture">
+                <img src="./assets/review2.png" alt="" />
+              </div>
               <div class="content">
-                <h4 class="reviewer-name">Shafe Alam</h4>
-                <h4 class="reviewer-designation">
-                  Full Stack Softwere Engineer
-                </h4>
+                <h4 class="reviewer-name">Arif Ifte Khairul Islam</h4>
+                <h4 class="reviewer-designation">Web Developer</h4>
               </div>
             </div>
           </div>
         </div>
         <a
-          href="https://www.fiverr.com/rafeealam1?up_rollout=true"
+          href="https://www.fiverr.com/rafeealam1"
           target="_blank"
           class="more-reviews"
           >More Reviews
@@ -586,13 +608,13 @@
                 <div class="row1">
                   <input
                     type="text"
-                    id="fname"
+                    id="name"
                     name="firstname"
                     placeholder="Enter Your Name"
                   />
                   <input
                     type="text"
-                    id="fname"
+                    id="email"
                     name="firstname"
                     placeholder="Enter Your Email"
                   />
@@ -600,13 +622,13 @@
                 <div class="row2">
                   <input
                     type="text"
-                    id="fname"
+                    id="number"
                     name="firstname"
                     placeholder="Enter Your Phone Number"
                   />
                   <input
                     type="text"
-                    id="fname"
+                    id="subject"
                     name="firstname"
                     placeholder="Enter Your Subject"
                   />
@@ -615,13 +637,20 @@
             </div>
 
             <textarea
-              id="subject"
+              id="message"
               name="subject"
               placeholder="Type Your Message"
               style="height: 200px"
             ></textarea>
 
-            <input class="btn-sent" type="submit" value="Send Message" />
+            <button
+              class="btn-sent"
+              type="submit"
+              value="Send Message"
+              onclick="sendMail()"
+            >
+              Send Email
+            </button>
           </form>
         </div>
       </section>
