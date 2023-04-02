@@ -1,37 +1,48 @@
-// let skill_icon_base = document.querySelectorAll(".base");
-// let skill_icon_green = document.querySelectorAll(".green");
-// let skill = document.querySelectorAll(".skill");
+///////////////////////////////////////
+// Reveal sections
+const allSections = document.querySelectorAll(".section");
 
-// skill_icon_base.addEventListener("mouseover", responeMouseOver);
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
 
-// function responeMouseOver() {
-//   let skill_icon_base = skill_icon_base;
-//   let skill_icon_green = skill_icon_green;
-//   const skill = skill;
-//   skill.classlist.remove("skill_icon_base");
-// }
+  if (!entry.isIntersecting) return;
 
-function sendMail() {
-  let params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    number: document.getElementById("number").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
-  };
-  const serviceID = "service_c9s4bkp";
-  const templateID = "template_wxgzjqp";
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
 
-  emailjs
-    .send(serviceID, templateID, params)
-    .then((res) => {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("number").value = "";
-      document.getElementById("subject").value = "";
-      document.getElementById("message").value = "";
-      console.log(res);
-      alert("Your message sent successfully.");
-    })
-    .catch((err) => console.log(err));
-}
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
+
+// // Lazy loading images
+// const imgTargets = document.querySelectorAll('img[data-src]');
+
+// const loadImg = function (entries, observer) {
+//   const [entry] = entries;
+
+//   if (!entry.isIntersecting) return;
+
+//   // Replace src with data-src
+//   entry.target.src = entry.target.dataset.src;
+
+//   entry.target.addEventListener('load', function () {
+//     entry.target.classList.remove('lazy-img');
+//   });
+
+//   observer.unobserve(entry.target);
+// };
+
+// const imgObserver = new IntersectionObserver(loadImg, {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: '200px',
+// });
+
+// imgTargets.forEach(img => imgObserver.observe(img));

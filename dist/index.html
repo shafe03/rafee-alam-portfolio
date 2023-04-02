@@ -32,7 +32,16 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Portfolio" />
     <meta name="facebook:title" content="Portfolio | Rafee alam" />
-    <link rel="stylesheet" href="/assets/index-199e0763.css">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("sMQpCIv6k7z3qh_6q");
+      })();
+    </script>
+    <link rel="stylesheet" href="/assets/index-b9c6d351.css">
   </head>
   <body>
     <!-- navbar -->
@@ -600,13 +609,13 @@
                 <div class="row1">
                   <input
                     type="text"
-                    id="fname"
+                    id="name"
                     name="firstname"
                     placeholder="Enter Your Name"
                   />
                   <input
                     type="text"
-                    id="fname"
+                    id="email"
                     name="firstname"
                     placeholder="Enter Your Email"
                   />
@@ -614,13 +623,13 @@
                 <div class="row2">
                   <input
                     type="text"
-                    id="fname"
+                    id="number"
                     name="firstname"
                     placeholder="Enter Your Phone Number"
                   />
                   <input
                     type="text"
-                    id="fname"
+                    id="subject"
                     name="firstname"
                     placeholder="Enter Your Subject"
                   />
@@ -629,13 +638,20 @@
             </div>
 
             <textarea
-              id="subject"
+              id="message"
               name="subject"
               placeholder="Type Your Message"
               style="height: 200px"
             ></textarea>
 
-            <input class="btn-sent" type="submit" value="Send Message" />
+            <button
+              class="btn-sent"
+              type="submit"
+              value="Send Message"
+              onclick="sendMail()"
+            >
+              Send Email
+            </button>
           </form>
         </div>
       </section>

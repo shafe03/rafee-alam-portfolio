@@ -114,7 +114,11 @@
   a {
     align-self: center;
     @include button-common-style;
-    margin: 1rem;
+    margin-top: 2.5rem;
+
+    @include mobile {
+      margin-top: 1rem;
+    }
     svg {
       margin-left: 0.5rem;
     }

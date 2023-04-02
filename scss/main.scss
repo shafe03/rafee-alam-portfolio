@@ -61,3 +61,16 @@ h2 {
     font-size: 1.3rem;
   }
 }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}

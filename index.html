@@ -32,15 +32,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Portfolio" />
     <meta name="facebook:title" content="Portfolio | Rafee alam" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("sMQpCIv6k7z3qh_6q");
-      })();
-    </script>
   </head>
   <body>
     <!-- navbar -->
@@ -126,7 +117,11 @@
             </div>
           </div>
           <div class="landing-page-image-section">
-            <img src="./assets/rafee alam.svg" alt="rafee-alam-picture" />
+            <img
+              data-src="./assets/rafee alam-lazy.svg"
+              src="./assets/rafee alam.svg"
+              alt="rafee-alam-picture"
+            />
           </div>
         </div>
       </section>
@@ -134,7 +129,7 @@
       <!--End of landing page -->
 
       <!-- Start of about me section -->
-      <section class="about-me" id="about-me">
+      <section class="about-me section section--hidden" id="about-me">
         <div class="wrapper">
           <div class="about-me-content">
             <h2>About Me</h2>
@@ -191,7 +186,7 @@
       <!-- End of about me section -->
 
       <!-- start of services section -->
-      <section class="services-section">
+      <section class="services-section section section--hidden">
         <h2>My Services</h2>
         <div class="services-wrapper">
           <div class="services">
@@ -260,7 +255,7 @@
       <!-- end of services section -->
 
       <!-- Start Of Skilled in Section -->
-      <section class="skilled-in">
+      <section class="skilled-in section section--hidden">
         <h2>Skiled In</h2>
         <div class="skills">
           <div class="skill">
@@ -367,7 +362,7 @@
       <!-- End Of Skilled in Section -->
 
       <!-- Start of portfolio section -->
-      <section class="portfolio-section" id="portfolio">
+      <section class="portfolio-section section section--hidden" id="portfolio">
         <h2>My Latest Project</h2>
         <div class="portfolio-wrapper">
           <div class="project project-1">
@@ -437,7 +432,7 @@
       <!-- End of portfolio section -->
 
       <!-- start of review -->
-      <section class="reviews">
+      <section class="reviews section section--hidden">
         <h2>What Clients Say</h2>
         <div class="review-wrapper">
           <div class="review review1">
@@ -452,7 +447,7 @@
               </div>
             </div>
             <p>
-              it was a pleasure to work with i_itachixd, he is very flexible,
+              it was a pleasure to work with Rafee alam, he is very flexible,
               friendly and above all he understands the need quickly, order from
               him with your eyes closed.
             </p>
@@ -542,7 +537,7 @@
       <!-- End of review -->
 
       <!-- start of contact section -->
-      <section class="contact" id="contact">
+      <section class="contact section section--hidden" id="contact">
         <h2>Contact With Me</h2>
         <div class="contact-wrapper">
           <div class="contact-content">
@@ -602,20 +597,25 @@
             </div>
           </div>
 
-          <form class="contact-form" action="">
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://getform.io/f/7d45821e-2196-4cde-969a-d31cfe910360"
+            method="POST"
+          >
             <div class="input-wrapper">
               <div class="inputs">
                 <div class="row1">
                   <input
                     type="text"
                     id="name"
-                    name="firstname"
+                    name="name"
                     placeholder="Enter Your Name"
                   />
                   <input
-                    type="text"
+                    type="email"
                     id="email"
-                    name="firstname"
+                    name="email"
                     placeholder="Enter Your Email"
                   />
                 </div>
@@ -623,32 +623,31 @@
                   <input
                     type="text"
                     id="number"
-                    name="firstname"
+                    name="number"
                     placeholder="Enter Your Phone Number"
                   />
                   <input
                     type="text"
                     id="subject"
-                    name="firstname"
+                    name="subject"
                     placeholder="Enter Your Subject"
                   />
                 </div>
               </div>
             </div>
-
+            <input
+              type="hidden"
+              name="_gotcha"
+              style="display: none !important"
+            />
             <textarea
               id="message"
-              name="subject"
+              name="message"
               placeholder="Type Your Message"
               style="height: 200px"
             ></textarea>
 
-            <button
-              class="btn-sent"
-              type="submit"
-              value="Send Message"
-              onclick="sendMail()"
-            >
+            <button class="btn-sent" type="submit" value="Send">
               Send Email
             </button>
           </form>

@@ -691,7 +691,13 @@
   border-radius: 0.2rem;
   border-color: #088869;
   font-size: normal;
-  margin: 1rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .about-me a {
+    margin-top: 1rem;
+  }
 }
 
 .about-me a svg {
@@ -1825,5 +1831,23 @@ h2 {
   h2 {
     font-size: 1.3rem;
   }
+}
+
+.section--hidden {
+  opacity: 0;
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
+}
+
+.section {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.lazy-img {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
 }
 /*# sourceMappingURL=main.css.map */
