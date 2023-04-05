@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -32,23 +32,18 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Portfolio" />
     <meta name="facebook:title" content="Portfolio | Rafee alam" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("sMQpCIv6k7z3qh_6q");
-      })();
-    </script>
-    <link rel="stylesheet" href="/assets/index-b9c6d351.css">
+    <link rel="stylesheet" href="/assets/index-26eb63d0.css" />
   </head>
   <body>
     <!-- navbar -->
     <nav class="navbar">
       <div class="logo-div">
         <a href="index.html" class="logo"> Coruscatingart </a>
-        <img class="logo-star" src="/assets/logo-star-5b7bcf9c.svg" alt="logo-star" />
+        <img
+          class="logo-star"
+          src="/assets/logo-star-5b7bcf9c.svg"
+          alt="logo-star"
+        />
       </div>
       <div class="nav-list">
         <a href="#about-me" class="nav-link">About</a>
@@ -81,11 +76,15 @@
         <div class="hero">
           <div class="hero-content">
             <h3>Hello there, I'm</h3>
-            <h1>Rafee Alam</h1>
+            <h1 class="typed">Rafee Alam</h1>
             <h3 class="profession">UI / UX Researcher & Graphic Designer</h3>
             <div class="contact-button-area">
               <a href="#contact">Contact me</a>
-              <a href="#" class="get-resume"
+              <a
+                href="./assets/Rafee Alam.pdf"
+                attributes-list
+                download
+                class="get-resume"
                 >Get Resume
                 <svg
                   width="16"
@@ -105,29 +104,46 @@
             <p class="find-me-on">FIND ME ON:</p>
             <div class="landing-page-link">
               <a href="https://dribbble.com/coruscatingart" target="_blank">
-                <img src="/assets/dribbble-icon-bf8da32b.svg" alt="dribbble-icon"
+                <img
+                  src="/assets/dribbble-icon-bf8da32b.svg"
+                  alt="dribbble-icon"
               /></a>
               <a href="https://www.behance.net/coruscatingart" target="_blank"
-                ><img src="/assets/behance-icon-0d070c1e.svg" alt="behance-icon" />
+                ><img
+                  src="/assets/behance-icon-0d070c1e.svg"
+                  alt="behance-icon"
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/coruscatingart/"
                 target="_blank"
               >
-                <img src="/assets/linked-in-icon-9fb641cc.svg" alt="linked-in-icon"
+                <img
+                  src="/assets/linked-in-icon-9fb641cc.svg"
+                  alt="linked-in-icon"
               /></a>
               <a
                 href="https://www.instagram.com/coruscatingart/"
                 target="_blank"
-                ><img src="/assets/instagram-icon-1361c701.svg" alt="instagram-icon" />
+                ><img
+                  src="/assets/instagram-icon-1361c701.svg"
+                  alt="instagram-icon"
+                />
               </a>
               <a href="https://www.facebook.com/coruscatingart/" target="_blank"
-                ><img src="/assets/facebook-icon-55817399.svg" alt="facebook-icon" />
+                ><img
+                  src="/assets/facebook-icon-55817399.svg"
+                  alt="facebook-icon"
+                />
               </a>
             </div>
           </div>
           <div class="landing-page-image-section">
-            <img src="/assets/rafee alam-b84680c3.svg" alt="rafee-alam-picture" />
+            <img
+              data-src="./assets/rafee alam-lazy.svg"
+              src="/assets/rafee alam-b84680c3.png"
+              alt="rafee-alam-picture"
+            />
           </div>
         </div>
       </section>
@@ -135,7 +151,7 @@
       <!--End of landing page -->
 
       <!-- Start of about me section -->
-      <section class="about-me" id="about-me">
+      <section class="about-me section section--hidden" id="about-me">
         <div class="wrapper">
           <div class="about-me-content">
             <h2>About Me</h2>
@@ -192,7 +208,7 @@
       <!-- End of about me section -->
 
       <!-- start of services section -->
-      <section class="services-section">
+      <section class="services-section section section--hidden">
         <h2>My Services</h2>
         <div class="services-wrapper">
           <div class="services">
@@ -261,7 +277,7 @@
       <!-- end of services section -->
 
       <!-- Start Of Skilled in Section -->
-      <section class="skilled-in">
+      <section class="skilled-in section section--hidden">
         <h2>Skiled In</h2>
         <div class="skills">
           <div class="skill">
@@ -368,7 +384,7 @@
       <!-- End Of Skilled in Section -->
 
       <!-- Start of portfolio section -->
-      <section class="portfolio-section" id="portfolio">
+      <section class="portfolio-section section section--hidden" id="portfolio">
         <h2>My Latest Project</h2>
         <div class="portfolio-wrapper">
           <div class="project project-1">
@@ -400,7 +416,10 @@
             >
           </div>
           <div class="project project-4">
-            <img src="/assets/7. Auxellent Landing Page Concept-051c46aa.jpg" alt="" />
+            <img
+              src="/assets/7. Auxellent Landing Page Concept-051c46aa.jpg"
+              alt=""
+            />
             <a
               href="https://www.behance.net/gallery/165391499/NFT-Landing-Hero-Page-Concept"
               target="_blank"
@@ -438,12 +457,16 @@
       <!-- End of portfolio section -->
 
       <!-- start of review -->
-      <section class="reviews">
+      <section class="reviews section section--hidden">
         <h2>What Clients Say</h2>
         <div class="review-wrapper">
           <div class="review review1">
             <div class="stars-section">
-              <img class="quotes" src="/assets/quotes-0c38f0d1.svg" alt="quotes" />
+              <img
+                class="quotes"
+                src="/assets/quotes-0c38f0d1.svg"
+                alt="quotes"
+              />
               <div class="stars">
                 <img src="/assets/star-9c838889.svg" alt="start" />
                 <img src="/assets/star-9c838889.svg" alt="start" />
@@ -453,7 +476,7 @@
               </div>
             </div>
             <p>
-              it was a pleasure to work with i_itachixd, he is very flexible,
+              it was a pleasure to work with Rafee alam, he is very flexible,
               friendly and above all he understands the need quickly, order from
               him with your eyes closed.
             </p>
@@ -471,7 +494,11 @@
           </div>
           <div class="review review1">
             <div class="stars-section">
-              <img class="quotes" src="/assets/quotes-0c38f0d1.svg" alt="quotes" />
+              <img
+                class="quotes"
+                src="/assets/quotes-0c38f0d1.svg"
+                alt="quotes"
+              />
               <div class="stars">
                 <img src="/assets/star-9c838889.svg" alt="start" />
                 <img src="/assets/star-9c838889.svg" alt="start" />
@@ -487,7 +514,10 @@
             </p>
             <div class="reviewed-by">
               <div class="picture">
-                <img src="data:image/webp;base64,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" alt="" />
+                <img
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
               </div>
               <div class="content">
                 <h4 class="reviewer-name">icoexpert</h4>
@@ -497,7 +527,11 @@
           </div>
           <div class="review review1">
             <div class="stars-section">
-              <img class="quotes" src="/assets/quotes-0c38f0d1.svg" alt="quotes" />
+              <img
+                class="quotes"
+                src="/assets/quotes-0c38f0d1.svg"
+                alt="quotes"
+              />
               <div class="stars">
                 <img src="/assets/star-9c838889.svg" alt="start" />
                 <img src="/assets/star-9c838889.svg" alt="start" />
@@ -543,7 +577,7 @@
       <!-- End of review -->
 
       <!-- start of contact section -->
-      <section class="contact" id="contact">
+      <section class="contact section section--hidden" id="contact">
         <h2>Contact With Me</h2>
         <div class="contact-wrapper">
           <div class="contact-content">
@@ -603,20 +637,25 @@
             </div>
           </div>
 
-          <form class="contact-form" action="">
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://getform.io/f/7d45821e-2196-4cde-969a-d31cfe910360"
+            method="POST"
+          >
             <div class="input-wrapper">
               <div class="inputs">
                 <div class="row1">
                   <input
                     type="text"
                     id="name"
-                    name="firstname"
+                    name="name"
                     placeholder="Enter Your Name"
                   />
                   <input
-                    type="text"
+                    type="email"
                     id="email"
-                    name="firstname"
+                    name="email"
                     placeholder="Enter Your Email"
                   />
                 </div>
@@ -624,32 +663,31 @@
                   <input
                     type="text"
                     id="number"
-                    name="firstname"
+                    name="number"
                     placeholder="Enter Your Phone Number"
                   />
                   <input
                     type="text"
                     id="subject"
-                    name="firstname"
+                    name="subject"
                     placeholder="Enter Your Subject"
                   />
                 </div>
               </div>
             </div>
-
+            <input
+              type="hidden"
+              name="_gotcha"
+              style="display: none !important"
+            />
             <textarea
               id="message"
-              name="subject"
+              name="message"
               placeholder="Type Your Message"
               style="height: 200px"
             ></textarea>
 
-            <button
-              class="btn-sent"
-              type="submit"
-              value="Send Message"
-              onclick="sendMail()"
-            >
+            <button class="btn-sent" type="submit" value="Send">
               Send Email
             </button>
           </form>
@@ -673,10 +711,16 @@
             <img src="/assets/linked-in-icon-9fb641cc.svg" alt="linked-in-icon"
           /></a>
           <a href="https://www.instagram.com/coruscatingart/" target="_blank"
-            ><img src="/assets/instagram-icon-1361c701.svg" alt="instagram-icon" />
+            ><img
+              src="/assets/instagram-icon-1361c701.svg"
+              alt="instagram-icon"
+            />
           </a>
           <a href="https://www.facebook.com/coruscatingart/" target="_blank"
-            ><img src="/assets/facebook-icon-55817399.svg" alt="facebook-icon" />
+            ><img
+              src="/assets/facebook-icon-55817399.svg"
+              alt="facebook-icon"
+            />
           </a>
         </div>
         <p>&#169; 2023 Coruscatingart All rights reserved</p>

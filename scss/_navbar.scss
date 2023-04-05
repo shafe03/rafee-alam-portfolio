@@ -12,6 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mobile {
+      justify-content: center;
+      align-items: center;
+    }
     .logo {
       /* Coruscatingart */
 
@@ -49,6 +53,9 @@
     .logo-star {
       scale: 0.8;
       margin-left: 0.5rem;
+      @include mobile {
+        margin-top: 0.7rem;
+      }
     }
   }
 

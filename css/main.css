@@ -34,6 +34,17 @@
           align-items: center;
 }
 
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .navbar .logo-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .navbar .logo-div .logo {
   /* Coruscatingart */
   height: 34px;
@@ -71,6 +82,12 @@
 .navbar .logo-div .logo-star {
   scale: 0.8;
   margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .navbar .logo-div .logo-star {
+    margin-top: 0.7rem;
+  }
 }
 
 .navbar .nav-list {
@@ -299,6 +316,12 @@
 @media screen and (min-width: 350px) and (max-width: 749px) {
   .container .section-1 .hero .hero-content {
     padding-bottom: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -312,6 +335,68 @@
     line-height: 1.8rem;
     font-size: 1rem;
     text-align: center;
+  }
+}
+
+.container .section-1 .hero .hero-content .typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  -webkit-animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  0% {
+    border: 2px solid #f4f6f7;
+  }
+  50% {
+    border: 2px solid #f4f6f7;
+  }
+  70% {
+    border: 2px solid #f4f6f7;
+  }
+  50% {
+    border: 2px solid #f4f6f7;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes blink-caret {
+  0% {
+    border: 2px solid #f4f6f7;
+  }
+  50% {
+    border: 2px solid #f4f6f7;
+  }
+  70% {
+    border: 2px solid #f4f6f7;
+  }
+  50% {
+    border: 2px solid #f4f6f7;
+  }
+  100% {
+    border: none;
   }
 }
 
@@ -336,6 +421,14 @@
   .container .section-1 .hero .hero-content h1 {
     font-size: 2.5rem;
     line-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+  .container .section-1 .hero .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
   }
 }
 
