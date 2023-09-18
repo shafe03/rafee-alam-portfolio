@@ -74,3 +74,24 @@ h2 {
 .lazy-img {
   filter: blur(20px);
 }
+
+.WhatsApp-icon {
+  position: fixed;
+  height: 10%;
+  width: 5%;
+  right: 4rem;
+  bottom: 4rem;
+  @include media-tablet-2 {
+    width: 8%;
+    height: 12%;
+  }
+  @include media-tablet-1 {
+    width: 8%;
+    height: 10%;
+  }
+  @include mobile {
+    width: 10%;
+    height: 8%;
+    z-index: 100;
+  }
+}
