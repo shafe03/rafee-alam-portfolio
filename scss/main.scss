@@ -80,14 +80,17 @@ h2 {
   height: 10%;
   width: 5%;
   right: 4rem;
+  z-index: 100;
   bottom: 4rem;
   @include media-tablet-2 {
     width: 8%;
     height: 12%;
+    z-index: 100;
   }
   @include media-tablet-1 {
     width: 8%;
     height: 10%;
+    z-index: 100;
   }
   @include mobile {
     width: 10%;

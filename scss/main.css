@@ -1310,18 +1310,21 @@ h2 {
   height: 10%;
   width: 5%;
   right: 4rem;
+  z-index: 100;
   bottom: 4rem;
 }
 @media screen and (max-width: 950px) {
   .WhatsApp-icon {
     width: 8%;
     height: 12%;
+    z-index: 100;
   }
 }
 @media screen and (max-width: 750px) {
   .WhatsApp-icon {
     width: 8%;
     height: 10%;
+    z-index: 100;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 749px) {
